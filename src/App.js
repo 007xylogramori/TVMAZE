@@ -1,7 +1,7 @@
 import "./App.css";
-import Home from './pages/home/Home.jsx'
+import Home from './pages/Home/Home.jsx'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Movie from "./pages/movie/Movie.jsx";
+import Movie from "./pages/Movie/Movie.jsx";
 
 
 function App() {
