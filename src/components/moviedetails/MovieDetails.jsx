@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./moviedetails.css";
 import {  NavLink } from "react-router-dom";
-import Modal from "../../Modal";
-import Form from "../../pages/form/Form";
+import Modal from "../../Modal.js";
+import Form from "../../pages/form/Form.jsx";
 
 
 const MovieDetails = ({ data }) => {

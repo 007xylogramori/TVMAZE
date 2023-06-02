@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { useGlobalContext } from '../../context';
-import MovieDetails from '../../components/moviedetails/MovieDetails';
+import { useGlobalContext } from '../../context.js';
+import MovieDetails from '../../components/moviedetails/MovieDetails.jsx';
 
 const Movie = () => {
 

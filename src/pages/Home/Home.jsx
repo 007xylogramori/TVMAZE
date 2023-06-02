@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.css";
 import { useGlobalContext } from "../../context";
-import MovieCard from "../../components/movieCard/MovieCard";
+import MovieCard from "../../components/movieCard/MovieCard.jsx";
 import ReactLoading from 'react-loading';
 const Home = () => {
   const { movies, loading } = useGlobalContext();
