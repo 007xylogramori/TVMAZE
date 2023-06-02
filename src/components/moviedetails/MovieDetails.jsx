@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./moviedetails.css";
-import { NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
+import Modal from "../../Modal";
+import Form from "../../pages/form/Form";
 
 
 const MovieDetails = ({ data }) => {
+  const [openForm,setOpenForm]=useState(false)
+
   return (
     <div className="container">
       <div className="moviedetails">
@@ -32,7 +36,8 @@ const MovieDetails = ({ data }) => {
           {}
           <div className="btn-conatiner">
         <NavLink to='/'><button className="view-btn" >Back</button></NavLink>
-      <NavLink to='/form'><button className="view-btn">Book Ticket🎫</button></NavLink>
+      <button className="view-btn" onClick={()=>{setOpenForm(true)}}>Book Ticket🎫</button>
+        {openForm?  <Modal onClose={()=>{setOpenForm(false)}}><Form movie={data}/></Modal>:""}
       </div>
         </div>
         
