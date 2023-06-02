@@ -28,7 +28,7 @@ const MovieDetails = ({ data }) => {
             })}{" "}
           </div>
           <div>Summary-</div>
-          <div>{data.show.summary.slice(3, -4)}</div>
+          <div dangerouslySetInnerHTML={{__html:data.show.summary}}></div>
 
           <p>Status:{data.show.status}</p>
           <p>Premiered:{data.show.premiered}</p>
